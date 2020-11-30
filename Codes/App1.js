@@ -16,7 +16,7 @@ export default class App extends Component {
         {key:3, nome: 'Não Bivalente'}
       ],
       
-      limite: 0.0, //slider
+      limite: 100.0, //slider
       status: false, //switch
     }
     this.pegaNome = this.pegaNome.bind(this)
@@ -44,6 +44,7 @@ export default class App extends Component {
 
         <Text style={styles.titulo}>Banco React</Text>
 
+        <Text>{'\n'}</Text>
         <Text style={styles.texto}>Nome:</Text>
         <TextInput
         underlineColorAndroid='transparent'
@@ -74,8 +75,8 @@ export default class App extends Component {
         <Text>{'\n'}</Text>
         <Text style={styles.texto}>Seu limite:</Text>
         <Slider
-        minimumValue={0}
-        maximumValue={100}
+        minimumValue={100}
+        maximumValue={5000}
         style = {styles.slider}
         onValueChange={(valorSelecionado) => this.setState({limite: valorSelecionado})}
         value={this.state.limite}
@@ -104,7 +105,7 @@ export default class App extends Component {
             alert('Digite as informações corretamente')
             return
           }
-          alert('Conta Aberta com sucesso!\nNome: '
+          alert('Conta Aberta com sucesso!\n\nNome: '
           +this.state.nome+
           '\nIdade: '
           +this.state.idade+
