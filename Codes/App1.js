@@ -58,6 +58,7 @@ export default class App extends Component {
         style={styles.input} 
         placeholder={'Digite sua Idade'}
         onChangeText={this.pegaIdade}
+        keyboardType='numeric'
         />
 
         <Text>{'\n'}</Text>
