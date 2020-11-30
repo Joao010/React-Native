@@ -154,6 +154,5 @@ const styles = StyleSheet.create({
   slider:{
     height: 25,
     backgroundColor:'#dfe6e9',
-    borderRadius:30,
   },
 })
