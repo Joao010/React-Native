@@ -1,1 +1,1 @@
-# React-Native
+# React Native - Studies and Training
