@@ -7,7 +7,7 @@
         onChangeText={this.pegaNome}
         />
 
-///////////////// IN CONSTUCTOR
+///////////////// IN CONSTRUCTOR
 
 this.pegaNome = this.pegaNome.bind(this)
 
