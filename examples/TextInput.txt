@@ -1,0 +1,18 @@
+///////////////// IN VIEW
+
+<TextInput
+        underlineColorAndroid='transparent'
+        style={styles.input} 
+        placeholder={'Digite seu nome'}
+        onChangeText={this.pegaNome}
+        />
+
+///////////////// IN CONSTUCTOR
+
+this.pegaNome = this.pegaNome.bind(this)
+
+///////////////// OUT
+
+pegaNome(nome){
+    this.setState({nome: nome})
+  }
