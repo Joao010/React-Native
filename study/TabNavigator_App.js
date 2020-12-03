@@ -46,5 +46,5 @@ export default function App() {
         <Tab.Screen name='Contato' component={Contato}/>
       </Tab.Navigator>
     </NavigationContainer>
-  );
+  )
 }
