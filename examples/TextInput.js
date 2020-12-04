@@ -1,3 +1,7 @@
+///////////////// OUT
+
+const [nome, setNome] = useState()
+
 ///////////////// IN RETURN
 
 <TextInput
@@ -6,7 +10,3 @@
       placeholder={'Digite seu nome'}
       onChangeText={(nome) => setNome(nome)}
       />
-              
-///////////////// OUT
-
-const [nome, setNome] = useState()
