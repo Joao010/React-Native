@@ -1,8 +1,12 @@
+/////OUT
+const [valor, setValor] = useState()
+
+/////IN
 <Slider
         minimumValue={0}
         maximumValue={100}
-        onValueChange={(valorSelecionado) => this.setState({valor: valorSelecionado})}
-        value={this.state.valor}
+        onValueChange={(valorSelecionado) => setValor(valorSelecionado)}
+        value={valor}
         minimumTrackTintColor='green'
         maximumTrackTintColor='red'
-        />
+      />
