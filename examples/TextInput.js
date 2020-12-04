@@ -1,18 +1,12 @@
-///////////////// IN VIEW
+///////////////// IN RETURN
 
 <TextInput
-        underlineColorAndroid='transparent'
-        style={styles.input} 
-        placeholder={'Digite seu nome'}
-        onChangeText={this.pegaNome}
-        />
-
-///////////////// IN CONSTRUCTOR
-
-this.pegaNome = this.pegaNome.bind(this)
-
+      underlineColorAndroid='transparent'
+      style={styles.input} 
+      placeholder={'Digite seu nome'}
+      onChangeText={(nome) => setNome(nome)}
+      />
+              
 ///////////////// OUT
 
-pegaNome(nome){
-    this.setState({nome: nome})
-  }
+const [nome, setNome] = useState()
