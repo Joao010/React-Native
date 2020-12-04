@@ -1,5 +1,9 @@
+/////OUT
+const [valor, setValor] = useState(false)
+
+/////IN
 <Switch
-        value={this.state.status}
-        onValueChange={(valorSwitch) => this.setState({status: valorSwitch})}
+        value={valor}
+        onValueChange={(valorSwitch) => setValor(valorSwitch)}
         thumbColor='red'
-        />
+      />
